@@ -1,0 +1,13 @@
+﻿data_kind,model_id,scope,behavior,comparison,outcome,consistent_rate,inconsistent_rate,delta,ci_low,ci_high,permutation_p,holm_adjusted_p,n_clusters,n_valid_consistent,n_valid_inconsistent,bootstrap_seed,permutation_seed,bootstrap_iterations,permutation_iterations
+provided_responses,gpt-5.6-sol,overall,,inconsistent-consistent,E,0.9333333333333332,0.7999999999999999,-0.1333333333333333,-0.3333333333333333,0.049999999999999996,0.27487251274872515,0.8246175382461755,12,60,60,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,overall,,inconsistent-consistent,C,0.06666666666666667,0.19999999999999998,0.1333333333333333,-0.03333333333333334,0.3333333333333333,0.2846715328467153,0.8246175382461755,12,60,60,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,overall,,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,12,60,60,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,read,inconsistent-consistent,E,1.0,0.55,-0.44999999999999996,-0.7000000000000001,-0.15,0.25747425257474255,0.7616238376162383,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,read,inconsistent-consistent,C,0.0,0.45,0.45,0.15,0.7000000000000001,0.2538746125387461,0.7616238376162383,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,read,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,add,inconsistent-consistent,E,1.0,1.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,add,inconsistent-consistent,C,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,add,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,destructive,inconsistent-consistent,E,0.8,0.85,0.04999999999999993,-0.25,0.30000000000000004,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,destructive,inconsistent-consistent,C,0.2,0.15000000000000002,-0.04999999999999999,-0.30000000000000004,0.25,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,gpt-5.6-sol,behavior,destructive,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000

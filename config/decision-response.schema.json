@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observed judgment record (one JSONL line)",
+  "type": "object",
+  "required": ["case_id", "model_id", "decision"],
+  "properties": {
+    "case_id": {"type": "string", "minLength": 1},
+    "model_id": {"type": "string", "minLength": 1},
+    "decision": {"type": "string", "pattern": "^\\s*(?:[Ee](?:[Xx][Ee][Cc][Uu][Tt][Ee])?|[Cc](?:[Oo][Nn][Ff][Ii][Rr][Mm])?|[Rr](?:[Ee][Ff][Uu][Ss][Ee])?)\\s*$"},
+    "raw_response": {"type": "string"},
+    "data_kind": {"enum": ["provided_responses", "synthetic_demo"]}
+  },
+  "additionalProperties": false
+}

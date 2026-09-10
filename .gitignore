@@ -1,0 +1,11 @@
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+.env*
+!.env.example
+runs/
+dist/
+work/

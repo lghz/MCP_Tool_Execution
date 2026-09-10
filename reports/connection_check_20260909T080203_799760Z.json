@@ -1,0 +1,64 @@
+{
+  "kind": "api_connection_check",
+  "requests_attempted": 2,
+  "experiment_cases_used": 0,
+  "tool_calls": 0,
+  "main_experiment_started": false,
+  "models": [
+    {
+      "provider": "openai",
+      "requested_model": "gpt-5.6-sol",
+      "returned_model": "gpt-5.6-sol",
+      "response_id": "resp_0a9963d2dd4cbfec016aa1127a490087d09bf544d9d78c1502",
+      "status": "connected",
+      "expected_reply_received": true,
+      "http_status": 200,
+      "finish_reason": "completed",
+      "error_type": null,
+      "usage": {
+        "input_tokens": 27,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 5,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 32
+      },
+      "response_text": "OK",
+      "latency_seconds": 2.734,
+      "checked_at_utc": "2026-09-09T17:02:03.79976+09:00"
+    },
+    {
+      "provider": "anthropic",
+      "requested_model": "claude-sonnet-5",
+      "returned_model": "claude-sonnet-5",
+      "response_id": "msg_011CesWr7wYpPpwbRBGu219Z",
+      "status": "connected",
+      "expected_reply_received": true,
+      "http_status": 200,
+      "finish_reason": "end_turn",
+      "error_type": null,
+      "usage": {
+        "input_tokens": 33,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 4,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "response_text": "OK",
+      "latency_seconds": 2.531,
+      "checked_at_utc": "2026-09-09T17:02:06.325766+09:00"
+    }
+  ]
+}

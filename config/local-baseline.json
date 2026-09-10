@@ -1,0 +1,15 @@
+{
+  "stage": "local_infrastructure_baseline",
+  "tool_count": 12,
+  "domains": ["files", "notes", "events", "records"],
+  "behavior_groups": ["read", "add", "destructive"],
+  "annotation_condition": "truthful_baseline",
+  "open_world": false,
+  "data_storage": "private in-memory SQLite; files are virtual records",
+  "transport": "stdio",
+  "session_reset": "new server process restores the fixed seed",
+  "execution": "sequential",
+  "llm_api_integration": "excluded",
+  "note": "Documentation manifest, not a mutable annotation override. Runtime truth is defined by the fixed catalogue and tool implementations."
+}
+

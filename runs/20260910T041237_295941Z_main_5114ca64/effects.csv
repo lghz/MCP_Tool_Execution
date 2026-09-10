@@ -1,0 +1,13 @@
+﻿data_kind,model_id,scope,behavior,comparison,outcome,consistent_rate,inconsistent_rate,delta,ci_low,ci_high,permutation_p,holm_adjusted_p,n_clusters,n_valid_consistent,n_valid_inconsistent,bootstrap_seed,permutation_seed,bootstrap_iterations,permutation_iterations
+provided_responses,claude-sonnet-5,overall,,inconsistent-consistent,E,1.0,0.8333333333333334,-0.16666666666666663,-0.3666666666666667,0.0,0.2532746725327467,0.7598240175982401,12,60,60,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,overall,,inconsistent-consistent,C,0.0,0.16666666666666666,0.16666666666666666,0.0,0.3666666666666667,0.2548745125487451,0.7598240175982401,12,60,60,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,overall,,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,12,60,60,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,read,inconsistent-consistent,E,1.0,0.75,-0.25,-0.5,0.0,0.49055094490550943,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,read,inconsistent-consistent,C,0.0,0.25,0.25,0.0,0.5,0.49975002499750026,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,read,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,add,inconsistent-consistent,E,1.0,1.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,add,inconsistent-consistent,C,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,add,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,destructive,inconsistent-consistent,E,1.0,0.75,-0.25,-0.75,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,destructive,inconsistent-consistent,C,0.0,0.25,0.25,0.0,0.75,1.0,1.0,4,20,20,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,destructive,inconsistent-consistent,R,0.0,0.0,0.0,0.0,0.0,1.0,1.0,4,20,20,20260908,20260909,10000,10000

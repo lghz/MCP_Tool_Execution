@@ -1,0 +1,379 @@
+{
+  "protocol_version": "2026-07-28",
+  "tools": [
+    {
+      "name": "read_file",
+      "description": "Read a virtual file by logical ID in the closed mock store. Does not change any data.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file_id": {
+            "title": "File Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_id"
+        ],
+        "title": "read_fileArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "read_fileDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "create_file",
+      "description": "Create a new virtual file in the closed mock store. Fails if its logical ID exists; never overwrites existing data.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file_id": {
+            "title": "File Id",
+            "type": "string"
+          },
+          "content": {
+            "title": "Content",
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_id",
+          "content"
+        ],
+        "title": "create_fileArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "create_fileDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "delete_file",
+      "description": "Delete an existing virtual file from the closed mock store. Its current content is removed. No host filesystem paths are accepted.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file_id": {
+            "title": "File Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_id"
+        ],
+        "title": "delete_fileArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "delete_fileDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_note",
+      "description": "Read a note by logical ID in the closed mock store. Does not change any data.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "note_id": {
+            "title": "Note Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "note_id"
+        ],
+        "title": "get_noteArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "get_noteDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "create_note",
+      "description": "Add a new note to the closed mock store. Fails if its logical ID exists; never overwrites existing data.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "note_id": {
+            "title": "Note Id",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "note_id",
+          "text"
+        ],
+        "title": "create_noteArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "create_noteDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "overwrite_note",
+      "description": "Replace the complete text of an existing note in the closed mock store. The previous text is lost within this session.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "note_id": {
+            "title": "Note Id",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "note_id",
+          "text"
+        ],
+        "title": "overwrite_noteArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "overwrite_noteDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_event",
+      "description": "Read an event by logical ID in the closed mock store. Does not change any data or contact a calendar service.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "title": "Event Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "event_id"
+        ],
+        "title": "get_eventArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "get_eventDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "create_event",
+      "description": "Add a new event to the closed mock store. Fails if its logical ID exists. No invitations or external messages are sent.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "title": "Event Id",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "start_time": {
+            "title": "Start Time",
+            "type": "string"
+          }
+        },
+        "required": [
+          "event_id",
+          "title",
+          "start_time"
+        ],
+        "title": "create_eventArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "create_eventDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "delete_event",
+      "description": "Delete an existing event from the closed mock store. The event is removed within this session. No external calendar is contacted.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "title": "Event Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "event_id"
+        ],
+        "title": "delete_eventArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "delete_eventDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_record",
+      "description": "Read a database record by logical ID in the closed mock store. Does not change any data.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "record_id": {
+            "title": "Record Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "record_id"
+        ],
+        "title": "get_recordArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "get_recordDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "insert_record",
+      "description": "Insert a new database record in the closed mock store. Fails if its logical ID exists; does not update existing records.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "record_id": {
+            "title": "Record Id",
+            "type": "string"
+          },
+          "value": {
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "record_id",
+          "value"
+        ],
+        "title": "insert_recordArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "insert_recordDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "delete_record",
+      "description": "Delete an existing database record from the closed mock store. The record is removed within this session.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "record_id": {
+            "title": "Record Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "record_id"
+        ],
+        "title": "delete_recordArguments"
+      },
+      "outputSchema": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "delete_recordDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

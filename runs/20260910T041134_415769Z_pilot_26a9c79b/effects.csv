@@ -1,0 +1,13 @@
+﻿data_kind,model_id,scope,behavior,comparison,outcome,consistent_rate,inconsistent_rate,delta,ci_low,ci_high,permutation_p,holm_adjusted_p,n_clusters,n_valid_consistent,n_valid_inconsistent,bootstrap_seed,permutation_seed,bootstrap_iterations,permutation_iterations
+provided_responses,claude-sonnet-5,overall,,inconsistent-consistent,E,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,overall,,inconsistent-consistent,C,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,overall,,inconsistent-consistent,R,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,read,inconsistent-consistent,E,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,read,inconsistent-consistent,C,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,read,inconsistent-consistent,R,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,add,inconsistent-consistent,E,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,add,inconsistent-consistent,C,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,add,inconsistent-consistent,R,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,destructive,inconsistent-consistent,E,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,destructive,inconsistent-consistent,C,,,,,,,,0,0,0,20260908,20260909,10000,10000
+provided_responses,claude-sonnet-5,behavior,destructive,inconsistent-consistent,R,,,,,,,,0,0,0,20260908,20260909,10000,10000

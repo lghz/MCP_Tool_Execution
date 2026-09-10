@@ -1,0 +1,50 @@
+{
+  "providers": [
+    {
+      "provider": "openai",
+      "model_id": "gpt-5.6-sol",
+      "api_key_env": "OPENAI_API_KEY",
+      "generation": {
+        "max_output_tokens": 4096
+      }
+    },
+    {
+      "provider": "anthropic",
+      "model_id": "claude-sonnet-5",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "generation": {
+        "max_output_tokens": 4096
+      }
+    }
+  ],
+  "dataset_path": "datasets/20260909T100049_309346Z/cases.jsonl",
+  "expected_dataset_sha256": "50093ec2d22761b286d0c7307d0a9322da21d4a726cefa227ae49480a0293480",
+  "expected_cases_per_model": 180,
+  "expected_main_inference_calls": 360,
+  "execution_order": "sequential",
+  "research_endpoint": "E_C_R_judgment_only",
+  "api_calls_enabled": false,
+  "timeout_seconds": 60,
+  "request_interval_seconds": 1,
+  "pilot_cases_per_model": 9,
+  "retry": {
+    "max_attempts": 3,
+    "backoff_seconds": 2,
+    "max_wait_seconds": 60,
+    "retry_http_statuses": [
+      429,
+      502,
+      503,
+      504
+    ],
+    "retry_connection_errors": true
+  },
+  "analysis": {
+    "bootstrap_seed": 20260908,
+    "permutation_seed": 20260909,
+    "bootstrap_iterations": 10000,
+    "permutation_iterations": 10000,
+    "multiple_comparison_correction": "holm_within_model_scope"
+  },
+  "request_limits": {}
+}

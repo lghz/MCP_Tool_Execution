@@ -1,0 +1,21 @@
+{
+  "kind": "offline_judgment_dataset",
+  "dataset_version": "draft-2",
+  "created_at_utc": "2026-09-09T08:58:46.550193+00:00",
+  "case_count": 540,
+  "unique_model_inputs": 108,
+  "tool_count": 12,
+  "conditions": [
+    "omitted",
+    "consistent",
+    "inconsistent"
+  ],
+  "request_variants": 3,
+  "repetitions": 5,
+  "shuffle_seed": 20260907,
+  "dataset_sha256": "4bce172a94651e5a1fe9e71058b22b0a59263232cd9fb63a72879b8e87ab6cf1",
+  "protocol_version_used_for_schema_export": "2026-07-28",
+  "inference_calls": 0,
+  "tool_calls": 0,
+  "note": "Only model_input is intended for future model input. Other fields are analysis-only labels. No correctness labels are supplied."
+}
